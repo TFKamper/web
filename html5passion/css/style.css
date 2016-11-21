@@ -1,0 +1,232 @@
+@import url("reset.css");
+
+body
+{
+	background: #EEE url("../images/bg.png") repeat-x;
+	color: #333;
+	font-family: "Istok Web", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+a { color: #F03; text-decoration: none; }
+a:hover { color: #333; text-decoration: none; }
+
+/* Main Styles */
+
+#container
+{
+	margin: 0 auto;
+	width: 900px;
+}
+
+	#headercont
+	{
+		width: 900px;
+		height: 360px;
+	}
+	
+		#headercont #header
+		{
+			width: 900px;
+			height: 100px;
+		}
+		
+			#headercont #header #logocont
+			{
+				float: left;
+				width: 400px;
+				height: 72px;
+				padding: 28px 0 0 0;
+			}
+			
+				#headercont #header #logocont h1 a
+				{
+					font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+					font-size: 42px;
+					text-transform: lowercase;
+					font-weight: normal;
+					letter-spacing: -1px;
+					color: #FFF;
+				}
+				
+					#headercont #header #logocont h1 a span
+					{
+						color: #F03;
+					}
+			
+			#headercont #header nav
+			{
+				float: left;
+				width: 500px;
+				height: 30px;
+				padding: 36px 0 0 0;
+			}
+		
+				#headercont #header nav ul
+				{
+					float: right;
+				}
+				
+				#headercont #header nav ul li
+				{
+					display: inline;
+				}
+				
+				#headercont #header nav ul li a
+				{
+					float: left;
+					line-height: 35px;
+					color: #999;
+					padding: 0 18px;
+					margin: 0 0 0 12px;
+					text-decoration: none;
+					font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+				
+					#headercont #header nav ul li.active a
+					{
+						color: #FFF;
+					}
+				
+				#headercont #header nav ul li a:hover
+				{
+					color: #F03;
+				}
+				
+		#gallerycont
+		{
+			width: 900px;
+		}		
+	
+		/* Start Easy Slider */
+			
+			#slider ul
+			{
+				position: relative;
+			}
+			
+			#slider ul li
+			{ 
+				position: relative;
+				width: 900px;
+				height: 230px;
+				overflow: hidden; 
+			}
+			
+			p#controls
+			{
+				position: relative;
+			} 
+			
+				p#controls #prevBtn, p#controls #nextBtn
+				{
+					position: absolute;
+					display: block;
+					left: -36px;
+					top: -160px;
+					width: 36px;
+					height: 77px;
+					margin: 0;
+					overflow: hidden;
+					text-indent: -8000px;
+				}	
+				
+					p#controls #nextBtn
+					{ 
+						left: 906px;
+					}
+				
+				p#controls #prevBtn a
+				{  
+					display: block;
+					width: 36px;
+					height: 77px;
+					background: url("../images/prev.png") no-repeat top left;	
+				}
+				
+					p#controls #prevBtn a:hover
+					{
+						background: url("../images/prev.png") no-repeat bottom left;
+					}
+				
+				p#controls #nextBtn a
+				{ 
+					display: block;
+					width: 36px;
+					height: 77px;
+					background: url("../images/next.png") no-repeat top right;	
+				}
+				
+					p#controls #nextBtn a:hover
+					{
+						background: url("../images/next.png") no-repeat bottom right;
+					}
+	
+		/* End Easy Slider */
+			
+	#maincont
+	{
+		width: 900px;
+		padding: 0;
+	}
+	
+		#maincont #main
+		{
+			margin: 0 auto;
+			width: 900px;
+			padding: 30px 0 10px 0;
+			line-height: 22px;
+			background: url("../images/bg-maincont.png") repeat-y;
+		}
+			
+			#maincont #main p { margin: 0 0 20px 0; }
+			
+			#maincont #main h1, #maincont #main h2, #maincont #main h3, #maincont #main h4, #maincont #main h5 { margin: 0 0 20px 0; font-weight: normal; letter-spacing: -1px; text-transform: lowercase; font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif; }
+			#maincont #main h1 { font-size: 34px; }
+			#maincont #main h2 { font-size: 32px; }
+			#maincont #main h3 { font-size: 30px; }
+			#maincont #main h4 { font-size: 30px; }
+			#maincont #main h5 { font-size: 28px; }
+				#maincont #main h1 span, #maincont #main h2 span, #maincont #main h3 span { color: #F03; }
+			
+			#maincont #main ul { margin: 0 0 20px 35px; list-style-type: square; }
+			#maincont #main ul li { padding: 0 0 0 2px; }
+			
+			#maincont #main ol { margin: 0 0 20px 35px; list-style-type: decimal; }
+			#maincont #main ol li { padding: 0 0 0 2px; }
+			
+			#maincont #main blockquote { background: #DDD; border-left: 3px solid #F03; padding: 15px; margin: 0 0 20px 0; font-style: italic; line-height: 18px; }
+			
+				#maincont #main #mainleft
+				{
+					float: left;
+					width: 620px;
+					padding: 0 30px 0 0;
+				}
+				
+				#maincont #main #mainright
+				{
+					float: left;
+					width: 220px;
+					padding: 0 0 0 30px;
+				}
+		
+#footercont
+{
+	width: 100%;
+	margin: 15px 0 0 0;
+	background: #111;
+}
+
+	#footercont #footer
+	{
+		margin: 0 auto;
+		width: 860px;
+		padding: 25px 20px;
+		font-size: 11px;
+		text-align: right;
+		background: #111;
+		color: #999;
+	}
