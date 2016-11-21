@@ -1,0 +1,242 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1043{\fonttbl{\f0\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\f0\fs20 we will create a unique sliding box navigation. The idea is to make a box with the menu item slide out, while a thumbnail pops up. We will also include a submenu box with further links for some of the menu items. The submenu will slide to the left or to the right depending on which menu item we are hovering.\par
+The Markup\par
+For the HTML structure we will be using an unordered list where each menu item will contain the main link item and a div element for the submenu:\par
+\par
+<ul id="sdt_menu" class="sdt_menu">\par
+ <li>\par
+  <a href="#">\par
+   <img src="images/1.jpg" alt=""/>\par
+   <span class="sdt_active"></span>\par
+   <span class="sdt_wrap">\par
+    <span class="sdt_link">Portfolio</span>\par
+    <span class="sdt_descr">My work</span>\par
+   </span>\par
+  </a>\par
+  <div class="sdt_box">\par
+   <a href="#">Websites</a>\par
+   <a href="#">Illustrations</a>\par
+   <a href="#">Photography</a>\par
+  </div>\par
+ </li>\par
+ ...\par
+</ul>\par
+ \par
+ \par
+If there is no submenu, the div can simply be left out. The image will not be shown in the beginning since we will set its width and height to 0 in the CSS.\par
+Let\rquote s take a look at the style.\par
+The CSS\par
+We will start by styling the unordered list:\par
+\par
+ul.sdt_menu\{\par
+ margin:0;\par
+ padding:0;\par
+ list-style: none;\par
+ font-family:"Myriad Pro", "Trebuchet MS", sans-serif;\par
+ font-size:14px;\par
+ width:1020px;\par
+\}\par
+ \par
+ \par
+Genrally, we want to remove any default text-decoration and outline for all the link elements in our menu:\par
+\par
+ul.sdt_menu a\{\par
+ text-decoration:none;\par
+ outline:none;\par
+\}\par
+ \par
+ \par
+Our list items will be floating left and have the position relative since we will want to use absolute positioning for the elements inside. If we wouldn\rquote t set that, absolute positioned elements would be relative to the whole page:\par
+\par
+ul.sdt_menu li\{\par
+ float:left;\par
+ width:170px;\par
+ height:85px;\par
+ position:relative;\par
+ cursor:pointer;\par
+\}\par
+ \par
+ \par
+The styling for the main link element where we have our two spans for title and description will be styled as follows:\par
+ \par
+ul.sdt_menu li > a\{\par
+ position:absolute;\par
+ top:0px;\par
+ left:0px;\par
+ width:170px;\par
+ height:85px;\par
+ z-index:12;\par
+ background:transparent url(../images/overlay.png) no-repeat bottom right;\par
+ -moz-box-shadow:0px 0px 2px #000;\par
+ -webkit-box-shadow:0px 0px 2px #000;\par
+ box-shadow:0px 0px 2px #000;\par
+\}\par
+ \par
+ \par
+Notice the z-index: we will be defining a stacking order for all the important elements, so that the right ones stay on top.\par
+We are using a background image that creates a glass like effect with a semi-transparent gradient. When you use some background pattern (like the wood in the demo) it creates a beautiful effect. Make sure to try out different textures \endash  it just looks amazing!\par
+You can also play with the shadows \endash  changing the values to 2px 2px 6px #000 inset will give you a very nice effect.\par
+The image will be styled as follows:\par
+\par
+ul.sdt_menu li a img\{\par
+ border:none;\par
+ position:absolute;\par
+ width:0px;\par
+ height:0px;\par
+ bottom:0px;\par
+ left:85px;\par
+ z-index:100;\par
+ -moz-box-shadow:0px 0px 4px #000;\par
+ -webkit-box-shadow:0px 0px 4px #000;\par
+ box-shadow:0px 0px 4px #000;\par
+\}\par
+ \par
+ \par
+We want to animate the image to come up from the bottom, that\rquote s why we position it absolutely using \ldblquote bottom\rdblquote  as reference point. We also add some neat box shadow. The first two values are zero, making the shadow spread evenly around the image. We used this as well in the link element. This even shadow can be used as a trick, whenever you want to create a light border effect. The advantage is that shadows are not really there \endash  you don\rquote t need to consider it in your width or height calculations in elements. The current disadvantage is that CSS3 is not supported in IE.\par
+The wrapper for the title and description spans will have this style:\par
+ \par
+ul.sdt_menu li span.sdt_wrap\{\par
+ position:absolute;\par
+ top:25px;\par
+ left:0px;\par
+ width:170px;\par
+ height:60px;\par
+ z-index:15;\par
+\}\par
+ \par
+ \par
+If you have some larger texts, you will need to adapt these values. Make sure that the adapted values fit well with the animation values in the JavaScript, too.\par
+Next, we define the style for the gray box that slides down. We give it a height of 0 and position it already in a way that we just need to increase its height in the animation:\par
+\par
+ul.sdt_menu li span.sdt_active\{\par
+ position:absolute;\par
+ background:#111;\par
+ top:85px;\par
+ width:170px;\par
+ height:0px;\par
+ left:0px;\par
+ z-index:14;\par
+ -moz-box-shadow:0px 0px 4px #000 inset;\par
+ -webkit-box-shadow:0px 0px 4px #000 inset;\par
+ box-shadow:0px 0px 4px #000 inset;\par
+\}\par
+ \par
+ \par
+The common styles for the spans and links in the boxes will be the following:\par
+\par
+ul.sdt_menu li span span.sdt_link,\par
+ul.sdt_menu li span span.sdt_descr,\par
+ul.sdt_menu li div.sdt_box a\{\par
+ margin-left:15px;\par
+ text-transform:uppercase;\par
+ text-shadow:1px 1px 1px #000;\par
+\}\par
+ \par
+ \par
+The title and description will be styled as follows:\par
+\par
+ul.sdt_menu li span span.sdt_link\{\par
+ color:#fff;\par
+ font-size:24px;\par
+ float:left;\par
+ clear:both;\par
+\}\par
+ul.sdt_menu li span span.sdt_descr\{\par
+ color:#0B75AF;\par
+ float:left;\par
+ clear:both;\par
+ width:155px;\par
+ font-size:10px;\par
+ letter-spacing:1px;\par
+\}\par
+ \par
+ \par
+The submenu box will initially be hidden under the gray box. We will then animate it to the right or to the left depending on where we are. If we, for example, hover the last element, we want to animate that submenu box to the left, in all the other cases we want to animate it to the right.\par
+\par
+ul.sdt_menu li div.sdt_box\{\par
+ display:block;\par
+ position:absolute;\par
+ width:170px;\par
+ overflow:hidden;\par
+ height:170px;\par
+ top:85px;\par
+ left:0px;\par
+ display:none;\par
+ background:#000;\par
+\}\par
+ul.sdt_menu li div.sdt_box a\{\par
+ float:left;\par
+ clear:both;\par
+ line-height:30px;\par
+ color:#0B75AF;\par
+\}\par
+ \par
+ \par
+The first link in the submenu should have a top margin:\par
+\par
+ul.sdt_menu li div.sdt_box a:first-child\{\par
+ margin-top:15px;\par
+\}\par
+ul.sdt_menu li div.sdt_box a:hover\{\par
+ color:#fff;\par
+\}\par
+ \par
+ \par
+And that\rquote s all the style! Let\rquote s add the magic!\par
+The JavaScript\par
+When we enter with the mouse on a list element we enlarge the image, and show both, the sdt_active span and the sdt_wrap span. If the element has a submenu (sdt_box), then we slide it to the side. If the element is the last one in the menu we slide the submenu box to the left, otherwise to the right:\par
+view sourceprint?\par
+\par
+$(function() \{\par
+ $('#sdt_menu > li').bind('mouseenter',function()\{\par
+  var $elem = $(this);\par
+  $elem.find('img')\par
+    .stop(true)\par
+    .animate(\{\par
+    'width':'170px',\par
+    'height':'170px',\par
+    'left':'0px'\par
+    \},400,'easeOutBack')\par
+    .andSelf()\par
+    .find('.sdt_wrap')\par
+    .stop(true)\par
+    .animate(\{'top':'140px'\},500,'easeOutBack')\par
+    .andSelf()\par
+    .find('.sdt_active')\par
+    .stop(true)\par
+    .animate(\{'height':'170px'\},300,function()\{\par
+   var $sub_menu = $elem.find('.sdt_box');\par
+   if($sub_menu.length)\{\par
+    var left = '170px';\par
+    if($elem.parent().children().length == $elem.index()+1)\par
+     left = '-170px';\par
+    $sub_menu.show().animate(\{'left':left\},200);\par
+   \}\par
+  \});\par
+ \}).bind('mouseleave',function()\{\par
+  var $elem = $(this);\par
+  var $sub_menu = $elem.find('.sdt_box');\par
+  if($sub_menu.length)\par
+   $sub_menu.hide().css('left','0px');\par
+ \par
+  $elem.find('.sdt_active')\par
+    .stop(true)\par
+    .animate(\{'height':'0px'\},300)\par
+    .andSelf().find('img')\par
+    .stop(true)\par
+    .animate(\{\par
+    'width':'0px',\par
+    'height':'0px',\par
+    'left':'85px'\},400)\par
+    .andSelf()\par
+    .find('.sdt_wrap')\par
+    .stop(true)\par
+    .animate(\{'top':'25px'\},500);\par
+ \});\par
+\});\par
+ \par
+ \par
+And that\rquote s it! We hope you liked this little menu and find it useful!\par
+P.S. It looks very juicy in Google Chrome!\par
+}
+ 
