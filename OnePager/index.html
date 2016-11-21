@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="index, follow">
+		<meta name="copyright" content="Stephan W. 3d-hobby-art.de">
+		<meta name="description" content="Demo Bootstrap CSS Template" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Bootstrap OnePager Wall v1.0</title>
+		<!-- CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/template.css" rel="stylesheet">
+		<!-- Unterstützung für Media Queries und HTML5-Elemente im Internet Explorer über HTML5 shim und Respond.js -->
+		<!-- ACHTUNG: Respond.js funktioniert nicht, wenn du die Seite über file:// aufrufst -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+			
+			</script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+			
+			</script>
+		<![endif]-->
+	</head>
+	<body data-spy="scroll" data-target=".navbar-collapse">
+		<section id="top-section" class="home">
+			<div class="container-fluid">
+				<!-- Navigation -->
+				<div class="navbar-wrapper">
+					<div class="navbar navbar-inverse navbar-fixed-top <!--navbar-static-top-->" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Navigation ein-/ausblenden</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="index.html">OnePager Wall v1.0</a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#top-section">Home</a></li>
+								<li><a href="#gallery">Galerie</a></li>
+								<li><a href="#features">Features</a></li>
+								<li><a href="#download">Download</a></li>
+								<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#alerts">Alert</a></li>
+										<li><a href="#panels">Panels</a></li>
+										<li><a href="#blockquote">blockquote</a></li>
+										<li class="divider"></li>
+										<li class="dropdown-header">Nav-Überschrift</li>
+										<li><a href="#progress-bars">Progress-Bars</a></li>
+										<li><a href="#buttons">Buttons</a></li>
+										<li><a href="#tabs">Tabs</a></li>
+										<li><a href="#contact">Kontakt</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<section class="home-bg img-responsive gray" data-type="parallax" style="background: url('images/top-background.png') no-repeat fixed center top / cover;width: 100%;height: 720px;position: relative;">
+				<div class="logo_container">		
+					<div class="center animated fadeInDownBig" >
+						<p>Willkommen</p>   
+					</div>
+				</div>
+			</section>
+			
+		</section>
+		<!-- Gallery -->
+		<section id="gallery" class="gallery-section gray">
+			<div class="container-fluid">
+				<h1 class="text-center">Galerie</h1>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+						<div class="thumbnail thumbnailWrapper">
+							<img class="img-responsive" src="js/holder.js/100%x180" alt="">
+							<div class="DarkOverlay"></div>
+							<div class="DarkOverlayBtn">
+								<span class="roundedBtn"><a href="#"><i class="fa fa-search fa-2x"></i></a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<div class="thumbnail thumbnailWrapper">
+							<img class="img-responsive" src="js/holder.js/100%x180" alt="">
+							<div class="DarkOverlay"></div>
+							<div class="DarkOverlayBtn">
+								<span class="roundedBtn"><a href="#" data-toggle="modal" data-target="#imgModal"><i class="fa fa-search fa-2x"></i></a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail">
+							<img src="js/holder.js/100%x180">
+						</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail">
+							<img src="js/holder.js/100%x180">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail overflow-hidden">
+							<img src="js/holder.js/100%x200">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+								<p><a href="#" data-toggle="modal" data-target="#imgModal" class="btn btn-default" role="button">Modal</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="js/holder.js/100%x200">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+								<p><a class="btn btn-default" role="button">Button</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="js/holder.js/100%x200">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="js/holder.js/300x300" class="img-rounded">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="js/holder.js/300x300" class="img-circle">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img src="js/holder.js/300x300" class="img-thumbnail">
+							<div class="caption">
+								<h3>Vorschaubild-Titel</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Features -->
+		<section id="features" class="section-features silver">
+			<div class="container-fluid">
+				<div class="well">
+					<h1 class="text-center">Features!</h1>
+					<ul>
+						<li>responsive</li>
+						<li>flexibel</li>
+						<li>parallax</li>
+						<li>bootstrap v3.1.1</li>
+						<li>animate.css</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- Download -->
+		<section id="download" class="section-download">
+			<div class="container-fluid">
+				<div class="jumbotron">
+					<h1 class="text-center">Download!</h1>
+					<p>Dies ist ein einfaches Jumbotron, eine simple Komponente im Stil von Großbilschirmen, die du verwenden kannst, um Aufmerksamkeit auf exklusiv vorgestellte Inhalte oder Informationen zu lenken.</p>
+					<p><a href="http://www.3d-hobby-art.de/downloads/css-templates/file/159-onepager-wall.html" class="btn btn-default btn-lg" role="button">Download</a></p>
+				</div>
+			</div>
+		</section>
+		<!-- Alerts -->
+		<section id="alerts">
+			<div class="container-fluid">
+				<h1 class="text-center">Alerts</h1>
+				<div class="alert alert-success alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>Sehr gut!</strong>Du hast erfolgreich diesen wichtigen Warnhinweis gelesen.
+				</div>
+				<div class="alert alert-info alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>Hinweis!</strong>Hier ist deine Aufmerksamkeit gefragt, aber es ist nicht ganz so wichtig.
+				</div>
+				<div class="alert alert-warning">
+					<strong>Warnung!</strong>Du siehst ganz blass aus, ist alles in Ordnung?
+				</div>
+				<div class="alert alert-danger">
+					<strong>Oh nein!</strong>
+					Kontrolliere deine Eingaben und versuch es dann noch einmal.
+				</div>
+			</div>
+		</section>
+		<!-- Panels -->
+		<section id="panels" class="ghostwhite">
+			<div class="container-fluid">
+				<h1 class="text-center">Panels</h1>
+				<div class="panel panel-default">
+					<div class="panel-heading">Panel-Überschrift ohne Titel</div>
+					<div class="panel-body">Panel-Inhalt</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <h1 class="panel-title">Panel-Titel</h1>
+					</div>
+					<div class="panel-body">Panel-Inhalt</div>
+				</div>
+			</div>
+		</section>
+		<!-- Blockquote -->
+		<section id="blockquote" class="silver">
+			<div class="container-fluid">
+				<h1 class="text-center">Blockquote</h1>
+
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</p>
+					<footer>Jemand berühmtes in <cite title="Quellentitel">Quellentitel</cite></footer>
+				</blockquote>
+				<blockquote class="blockquote-reverse">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</p>
+					<footer>Jemand berühmtes in <cite title="Quellentitel">Quellentitel</cite></footer>
+				</blockquote>
+			</div>
+		</section>
+		<!-- Progress-Bars -->
+		<section id="progress-bars" class="gray">
+			<div class="container-fluid">
+				<h1 class="text-center">Progress-Bars</h1>
+				<div class="progress progress-striped">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% abgeschlossen (Erfolg)</span>
+					</div>
+				</div>
+				<div class="progress progress-striped active">
+					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 18%">
+						<span class="sr-only">18% abgeschlossen</span>
+					</div>
+				</div>
+				<div class="progress progress-striped">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%">
+						<span>66% abgeschlossen (Warnung)</span>
+					</div>
+				</div>
+				<div class="progress progress-striped">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+						<span>82% abgeschlossen (Gefahr/Fehler)</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Buttons -->
+		<section id="buttons" class="buttons-section lightgray">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<h1>Buttons</h1>
+						<p>
+							<!-- Standard-Button -->
+							<button type="button" class="btn btn-default">Standard</button>
+						</p>
+						<p>
+							<!-- Wertet den Button visuell auf und zeigt den wichtigsten von mehreren Buttons an -->
+							<button type="button" class="btn btn-primary">Primär</button>
+						</p>
+						<p>
+							<!-- Zeigt eine erfolgreiche oder positive Aktion an -->
+							<button type="button" class="btn btn-success">Erfolg</button>
+						</p>
+						<p>
+							<!-- Kontext-Button für informative Mitteilungen -->
+							<button type="button" class="btn btn-info">Info</button>
+						</p>
+						<p>
+							<!-- Zeigt an, dass bei dieser Aktion Vorsicht geboten ist -->
+							<button type="button" class="btn btn-warning">Warnung</button>
+						</p>
+						<p>
+							<!-- Zeigt eine gefährliche oder evtl. negative Aktion an -->
+							<button type="button" class="btn btn-danger">Gefahr</button>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						 <h1>Große Buttons</h1>
+						<p>
+							<button type="button" class="btn btn-default btn-lg">Großer Button</button>
+						</p>
+						<p>
+							<button type="button" class="btn btn-default">Standard-Button</button>
+						</p>
+						<p>
+							<button type="button" class="btn btn-default btn-sm">Kleiner Button</button>
+						</p>
+						<p>
+							<button type="button" class="btn btn-default btn-xs">Extra-kleiner Button</button>
+						</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<h1>Link Buttons, Link</h1>
+						<p>
+							<!-- Stufe einen Button herab, indem ihn wie einen Link aussehen lässt, aber Button-Verhalten beibehältst -->
+							<button type="button" class="btn btn-link">Link</button>
+						</p>
+						<p><a href="#">Link Normal</a></p>
+					</div>
+				</div>
+				 <h3>Button-Dropdowns</h3>
+				<!-- Einzelner Button -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Aktion <span class="caret"></span></button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Aktion</a></li>
+						<li><a href="#">Andere Aktion</a></li>
+						<li><a href="#">Irgendwas anderes</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Abgetrennter Link</a></li>
+					</ul>
+				</div>
+				 <h3>Getrennte Button-Dropdowns</h3>
+				<!-- Abgetrennter Button -->
+				<div class="btn-group">
+					<button type="button" class="btn btn-danger">Aktion</button>
+					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span><span class="sr-only">Menü ein-/ausblenden</span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Aktion</a></li>
+						<li><a href="#">Andere Aktion</a></li>
+						<li><a href="#">Irgendwas anderes</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Abgetrennter Link</a></li>
+					</ul>
+				</div>
+				 <h3>Deaktivierte Buttons</h3>
+				<p>
+					<button type="button" class="btn btn-lg btn-primary disabled" disabled="disabled">Primärer Button</button>
+					<button type="button" class="btn btn-default btn-lg disabled" disabled="disabled">Button</button>
+				</p>
+			</div>
+		</section>
+		<!-- Tabs + Accordion -->
+		<section id="tabs" class="tabs-section">
+			<div class="container-fluid">
+				<h2>Tabs</h2>
+				<div class="tabs">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab-1" data-toggle="tab">Tab #1</a></li>
+						<li class=""><a href="#tab-2" data-toggle="tab">Tab #2</a></li>
+						<li class=""><a href="#tab-3" data-toggle="tab">Tab #3</a></li>
+					</ul>
+					<!-- Tab content-->
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="tab-1">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet</p>
+						</div>
+						<div class="tab-pane fade" id="tab-2">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet.
+								<br>In facilisis dui eget arcu consectetur molestie. Sed eros urna placerat vitae commodo at, rutrum eget ligula. In eget velit in elit tincidunt dictum.</p>
+						</div>
+						<div class="tab-pane fade" id="tab-3">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+							<p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Accordion -->			
+			<h2>Accordion</h2>			
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Eintrag #1</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+				  <div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Eintrag #2</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Eintrag #3</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</section>
+		<!-- Contact -->
+		<section id="contact" class="contact-section" data-type="parallax" style="background: url('images/contact.png') repeat-y fixed center top / cover;width:100%; min-height:200px; height:auto; position:relative">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 animate" data-animation='fadeInLeft' data-animation-delay='100'>
+						<div class="text-center" data-toggle="tooltip" title="Address">
+							<span class="contact-icon"><i class="fa fa-map-marker"></i></span>
+							<address>
+							  <strong>Muster, Inc.</strong><br>
+							  123 Muster Ave, Suite 666<br>
+							  Muster Town, 99999			 
+							</address>
+						</div>
+					</div>
+					<div class="col-md-3 animate" data-animation='fadeInUp' data-animation-delay='100'>
+						<div class="text-center" data-toggle="tooltip" title="Telefonnummer">
+							<span class="contact-icon"><i class="fa fa-phone"></i></span>
+							<p><abbr data-toggle="tooltip" title="Telefonnummer">Tel.:</abbr> (012) 345678-9</p>
+						</div>
+					</div>
+					<div class="col-md-3 animate" data-animation='fadeInUp' data-animation-delay='100'>
+						<div class="text-center" data-toggle="tooltip" title="Live Support">
+							<span class="contact-icon"><i class="fa fa-life-ring"></i></span>
+							<p>Skype ID: 123456789</p>
+						</div>
+					</div>
+					<div class="col-md-3" data-animation='fadeInRight' data-animation-delay='100'>
+						<div class="text-center" data-toggle="tooltip" title="E-mail">
+							<span class="contact-icon"><i class="fa fa-envelope-o"></i></span>
+							<p><a href="mailto:#">vorname.nachname@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<section id="footer" class="footer-section">
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="social-links">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<p class="text-right">Designed by: <a target="_blank" href="http://www.3d-hobby-art.de/" data-toggle="tooltip" title="joomla!, 3d-art ...">3d-hobby-art.de</a></p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		
+		<!-- Top Link -->		
+		<a href="#top" id="top-link"><i class="fa fa-angle-double-up"></i></a>
+
+		<!-- Modal -->
+		<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="meinModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						 <h4 class="modal-title" id="meinModalLabel">Modal-Überschrift</h4>
+					</div>
+					<div class="modal-body">
+						<img src="js/holder.js/700x300" class="img-thumbnail">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/holder.js"></script>
+		<script src="js/template.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){$("body").tooltip({selector:'[data-toggle=tooltip]'});});
+		</script>
+	</body>
+</html>
