@@ -5,8 +5,79 @@
         <meta name="description" content="your description goes here">
         <meta name="keywords" content="your,keywords,goes,here">
         <meta name="author" content="Your Name">
-        <link type="text/css" rel="stylesheet" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/andreas04.css" media="screen,projection">
+        <link type="text/css" rel="stylesheet" href="https://rawgit.com/TFKamper/web/gh-pages/andreas/andreas04.css" media="screen,projection">
         <title>andreas04 v2.0</title>
+
+<style>
+/*
+Original design: andreas04 (v2.0 - June 01, 2010) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/andreas04/
+*/
+
+/* General layouts */
+body {margin:0; padding:0; font:76% tahoma,verdana,sans-serif; background:#e6e6e6 url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/bodybg.png?raw=true) repeat-x; color:#444; text-align:center;}
+#container {width:92%; min-width:700px; padding:0 20px; margin:0 auto; background:#f0f0f0 url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/contentbg.png?raw=true) repeat-x; text-align:left; border-left:1px solid #eef; border-right:1px solid #eef;}
+#container800 {width:700px; padding:0 20px; margin:0 auto; background:#f0f0f0 url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/contentbg.png?raw=true) repeat-x; text-align:left; border-left:1px solid #eef; border-right:1px solid #eef;}
+#container1024 {width:920px; padding:0 20px; margin:0 auto; background:#f0f0f0 url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/contentbg.png?raw=true) repeat-x; text-align:left; border-left:1px solid #eef; border-right:1px solid #eef;}
+
+/* Tags */
+a {text-decoration:none; color:#269; font-weight:bold;}
+a:hover {text-decoration:underline;}
+p {margin:0 0 15px 0;}
+h1,h2,h3,h4 {margin:0; padding:0; font-weight:normal; line-height:1.2em;}
+h1 {font-size:3em; letter-spacing:-2px; color:#567; margin:15px 0 5px 20px;}
+h1 a:hover {text-decoration:none;}
+h2 {font-size:1.6em; letter-spacing:-1px; margin:-10px 0 0 30px; color:#888;}
+h3 {color: #555; font-size:1.4em; margin:1em 0 0.5em 0.5em;}
+h4 {font-size:1.2em; font-weight:bold;}
+
+/* Header */
+#sitetitle {float:left; height:100px; background:url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/globe.gif?raw=true) no-repeat; width: 42%; color: #333;}
+#sitetitle a {color:#567; font-weight:normal;}
+#sitetitle a:hover {color:#269;}
+#menu {height:71px; padding-top:35px; text-align: right;}
+#menu a {margin:0; height:100px; padding:35px 6px 41px 6px; font-size:1.6em; font-weight:normal; letter-spacing:-1px; color:#888;}
+#menu a:hover{color:#269; text-decoration:none; background: #fff url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/menuhover.png?raw=true) repeat-x; padding:35px 5px 41px 5px; border-left: 1px solid #eee; border-right: 1px solid #eee;}
+#menu a.current{color:#269;}
+#menu a.current:hover{color:#888; padding:35px 6px 41px 6px;  text-decoration:none; background: none; border:0;}
+
+/* Main content and sidebar layout */
+#content {margin-top:30px; width:100%; clear:both; background:url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/globebottom.gif?raw=true) bottom left no-repeat;}
+#content h2 {margin:0 0 10px 0; color:#555; border-bottom:2px solid #abb;}
+#content h2 a {color:#555; font-weight:normal;}
+#content h2 a:hover {color:#269; text-decoration:none; background:none;}
+#content p {margin:0 0.5em 1.2em 0.5em;}
+#left {width:68%; float:left; line-height:1.4em;}
+#right {margin-left:70%; margin-top:-15px; line-height:1.4em;}
+#right h2 {margin:0 0 8px 0; padding:0; font-size:1.6em;}
+
+/* Footer */
+#footer {clear:both; padding:10px 0 12px 24px; text-align:left; color:#777;}
+#footer a {color:#777; font-weight:normal;}
+#footer h2 {color:#aaa; font-size:2em; letter-spacing:-1px; margin:0; padding:0; border:0;}
+#footer h2 a {color:#aaa;}
+#footer p {margin:0; padding:0;}
+
+
+/* Additional classes */
+.entry {margin:0 0 20px 0; border:2px solid #fff; background:#e6e6e6 url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/entrybg.png?raw=true) repeat-x; color:#333; padding:10px 10px 0 10px;}
+.entry a:hover, .intro a:hover {text-decoration:none; padding-bottom:2px; background:url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/flash2.gif?raw=true) bottom left repeat-x;}
+.link {color:#269; background:url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/linkarrow.gif?raw=true) left no-repeat; display:block; margin:4px 0 0 0; padding:2px 1em;}
+.link:hover {color:#48b; background:url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/linkarrow.gif?raw=true) left no-repeat;
+text-decoration:none;}
+.thumbs img {padding:3px; margin:0 2px 2px 0; border:1px solid #fff; background-color:#ddd; color: #555;}
+.thumbs img:hover {background: url(https://github.com/TFKamper/web/blob/gh-pages/andreas/images/flash.gif?raw=true);}
+.entryphoto {margin:5px; float:left; padding:3px; border:1px solid #fff; background-color:#ddd; color:#333;}
+.meta {clear:both; border-top: 2px solid #ccc; padding: 5px 1px 0 0; margin:10px 0 0 0; text-align:right; font-size:1em; color: #567;}
+.pagenav {color: #777; text-align:center;}
+.subcontainer {display:block; width:98%;}
+.rightsub {float:left; width:45%; padding:0;}
+.rightsub2 {margin-left:50%; padding:0;}
+.right {text-align:right;}
+.center {text-align:center;}
+.clear {clear:both;}
+.hide {display:none;}
+</style>
 </head>
 <body>
 <div id="container"> <!-- use id="container800" or id="container1024" to make layout fixed-width -->
@@ -16,7 +87,7 @@
 	</div>
 
 	<div id="menu">
-		<a class="current" href="index.html">active page</a>
+		<a class="current" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">active page</a>
 		<a href="#">second</a>
 		<a href="#">third</a>
 		<a href="#">fourth</a>
@@ -27,8 +98,8 @@
 	<div id="content">
 		<div id="left">
 			<div class="entry">
-				<h2><a href="index.html">The idea behind the template</a></h2>
-				<img class="entryphoto" src="images/entryphoto.png" width="160" height="213" alt="Entry photo example"><p>So here it is, my first free website template with classic .gif animations! This template was inspired by the traditional table-based layouts from the late 90's, but it has been built with the modern and standards-compliant code of today. Despite the classic influences and the animated visuals, the coding is very simple. No Flash or scripts have been used, only valid XHTML (Strict) and CSS. Because of that, the design works in most browsers, including text-based browsers and most modern mobile phones. The design also complies with Section 508 and the WCAG 1.0 Double-A accessibility guideline. The CSS includes additional styles to make the layout fixed to 800px or 1024px width if you prefer that over the default fluid width.</p>
+				<h2><a href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">The idea behind the template</a></h2>
+				<img class="entryphoto" src="https://github.com/TFKamper/web/blob/gh-pages/andreas/images/entryphoto.png?raw=true" width="160" height="213" alt="Entry photo example"><p>So here it is, my first free website template with classic .gif animations! This template was inspired by the traditional table-based layouts from the late 90's, but it has been built with the modern and standards-compliant code of today. Despite the classic influences and the animated visuals, the coding is very simple. No Flash or scripts have been used, only valid XHTML (Strict) and CSS. Because of that, the design works in most browsers, including text-based browsers and most modern mobile phones. The design also complies with Section 508 and the WCAG 1.0 Double-A accessibility guideline. The CSS includes additional styles to make the layout fixed to 800px or 1024px width if you prefer that over the default fluid width.</p>
 				<h3>Versions and CMS/Blog theme variations</h3>
 				<p>This template was originally released in November 2005, and later been updated a number of times with various buxfixes and adjustments. This is <strong>version 2.0</strong>, released on April 24th, 2008. Please note that this is a regular XHTML and CSS template, and not a theme for any blog or content management system. You can use this template as a starting point to build themes and CMS-specific templates for different systems, but that will require additional coding.</p>
 				<p>However, previous versions of the andreas04 template has been ported to a number of blogs and systems already, so if you consider using this template with a CMS or blog engine it may be worth taking a look at the official <a href="http://andreasviklund.com/templates/andreas04/">andreas04 template page</a> to see if there are ported versions. For example, Tara Aukerman has created the <a href="http://tara.elmadera.com/wordpress/design/">andreas04 theme for WordPress</a> which has been added as one of the default themes on <a href="http://wordpress.com/">WordPress.com</a>.</p>
@@ -37,7 +108,7 @@
 			</div>
 
 			<div class="entry">
-				<h2><a href="index.html">Learn more about using website templates!</a></h2>
+				<h2><a href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Learn more about using website templates!</a></h2>
 				<p>For more information on how to use this template to build your own website, and for tools and tutorials that can be useful, go to <a href="http://andreasviklund.com/">andreasviklund.com</a>.</p>
 			</div>
 			<p class="pagenav">« <a href="#">Sample back link</a> | <a href="#">Sample forward link</a> »</p>
@@ -49,16 +120,16 @@
 
 			<h2>Sample photos</h2>
 			<p class="thumbs">
-			<a href="#"><img src="images/thumb1.png" width="80" height="80" alt="Thumbnail example"></a>
-			<a href="#"><img src="images/thumb1.png" width="80" height="80" alt="Thumbnail example"></a>
-			<a href="#"><img src="images/thumb1.png" width="80" height="80" alt="Thumbnail example"></a>
-			<a href="#"><img src="images/thumb1.png" width="80" height="80" alt="Thumbnail example"></a>
+			<a href="#"><img src="https://github.com/TFKamper/web/blob/gh-pages/andreas/images/thumb1.png?raw=true" width="80" height="80" alt="Thumbnail example"></a>
+			<a href="#"><img src="https://github.com/TFKamper/web/blob/gh-pages/andreas/images/thumb1.png?raw=true" width="80" height="80" alt="Thumbnail example"></a>
+			<a href="#"><img src="https://github.com/TFKamper/web/blob/gh-pages/andreas/images/thumb1.png?raw=true" width="80" height="80" alt="Thumbnail example"></a>
+			<a href="#"><img src="https://github.com/TFKamper/web/blob/gh-pages/andreas/images/thumb1.png?raw=true" width="80" height="80" alt="Thumbnail example"></a>
 			</p>
 
 			<div class="subcontainer">
 				<div class="rightsub">
 					<h2>Sample menu</h2>
-					<a class="link" href="index.html">First page</a><br class="hide"><a class="link" href="index.html">Second</a><br class="hide"><a class="link" href="index.html">Third</a><br class="hide"><a class="link" href="index.html">Fourth</a><br class="hide"><a class="link" href="index.html">Fifth</a><br class="hide"><a class="link" href="index.html">Sixth</a><br class="hide"></div>
+					<a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">First page</a><br class="hide"><a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Second</a><br class="hide"><a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Third</a><br class="hide"><a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Fourth</a><br class="hide"><a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Fifth</a><br class="hide"><a class="link" href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">Sixth</a><br class="hide"></div>
 
 				<div class="rightsub2">
 					<h2>Sample links</h2>
@@ -67,10 +138,11 @@
 		</div>
 
 		<div id="footer">
-			<h2><a href="index.html">andreas04 v2.0</a></h2>
+			<h2><a href="https://github.com/TFKamper/web/blob/gh-pages/andreas/index.html">andreas04 v2.0</a></h2>
 <p>© 2010 Your Name | Template design by <a href="http://andreasviklund.com/">Andreas Viklund</a>
 </p>
 		</div>
 	</div>
 </div>
 </body></html>
+
