@@ -1,12 +1,12 @@
 body
 {
-	background:#000000 url('header.png') repeat-x;
+	background:#000000 url('https://github.com/TFKamper/web/blob/gh-pages/Design10/header.png?raw=true') repeat-x;
 	margin:0px;
 	padding:0px;
 }
 .site
 {
-	background:url('background.jpg') no-repeat top center;
+	background:url('https://github.com/TFKamper/web/blob/gh-pages/Design10/background.jpg?raw=true') no-repeat top center;
 }
 .site2
 {
@@ -125,7 +125,7 @@ h4,h5,h6
 }
 ul
 {
-	list-style-image:url('puce01.png');
+	list-style-image:url('https://github.com/TFKamper/web/blob/gh-pages/Design10/puce01.png?raw=true');
 }
 ul,ol
 {
@@ -141,6 +141,6 @@ ul,ol
 	height:40px;
 	margin-right:5px;
 	padding-top:10px;
-	background:url('search.png') no-repeat;
+	background:url('https://github.com/TFKamper/web/blob/gh-pages/Design10/search.png?raw=true') no-repeat;
 	padding-left:15px;
 }
