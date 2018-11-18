@@ -1,13 +1,13 @@
 @font-face { 
   font-family: Yanone Kaffeesatz; 
-    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
-    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+    src: url('https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/fonts/YanoneKaffeesatz-Regular.ttf'); 
 } 
 
 @font-face { 
   font-family: News Cycle; 
-    src: url('../fonts/NewsCycle-Regular.eot'); 
-    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+    src: url('https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/fonts/NewsCycle-Regular.ttf'); 
 } 
 
 html { 
@@ -26,7 +26,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 
 body { 
   font: normal .80em arial, sans-serif;
-  background: #fff url(../images/pattern.png) repeat;
+  background: #fff url(https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/images/pattern.png?raw=true) repeat;
   color: #444;
 }
 
@@ -275,7 +275,7 @@ nav {
 
 .content ul li, .sidebar ul li { 
   list-style-type: none;
-  background: url(../images/bullet.png) no-repeat;
+  background: url(https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/images/bullet.png?raw=true) no-repeat;
   margin: 0 0 0 0; 
   padding: 0 0 4px 28px;
   line-height: 1.5em;
@@ -500,7 +500,7 @@ span.sf-arrow {
   top: 20px;
   right: 5px;
   display: block;
-  background: url(../images/arrows-black.png) no-repeat 0 0;
+  background: url(https://github.com/TFKamper/web/blob/gh-pages/gallery_garden/images/arrows-black.png?raw=true) no-repeat 0 0;
   overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
   font-size: 1px;
 }
