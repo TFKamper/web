@@ -1,8 +1,8 @@
-@import url("reset.css");
+@import url("https://github.com/TFKamper/web/blob/gh-pages/essential/css/style.css");
 
 body
 {
-	background: #FFF url("../images/bg.png") repeat-x;
+	background: #FFF url("https://github.com/TFKamper/web/blob/gh-pages/essential/images/bg.png?raw=true") repeat-x;
 	color: #555;
 	font-size: 12px;
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
